@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gallery App</title>
+    <!-- pWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="images/jemuel-logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/jemuel-logo.png" />
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Jem Portfolio" />
+    <meta name="msapplication-TileImage" content="images/jemuel-logo.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+
+    <!-- spcedif -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="fullscreen">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light--blue large text-white"
+      style="background-color: rgba(0, 0, 255, 0.3)"
+    >
+      <a
+        class="navbar-brand"
+        href="#"
+        style="color: white; font-weight: bold; font-size: 2.6rem"
+        >PWA Gallery</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="color: black; background-color: white"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="loadHome()"
+              style="color: white"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="loadGallery()"
+              style="color: white"
+              >Gallery Albums</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              onclick="loadAbout()"
+              style="color: white"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+
+    <div class="container mt-4">
+      <div
+        id="content"
+        style="background: rgba(255, 255, 255, 0.3); padding: 2rem"
+      ></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="service-worker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
